@@ -1,0 +1,20 @@
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+.spacer-sidebar {
+    width: 250px;
+    transition-duration: 0.5s;
+}
+.sidebar {
+    width: 250px;
+    transition-duration: 0.5s;
+}
+.sidebar-x {
+    left: -250px !important;
+}
+.w-0 {
+    width: 0px !important;
+}
+.w-90 {
+    width: 90%;
+}
