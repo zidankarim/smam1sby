@@ -27,21 +27,38 @@
                   </nav>
             </div>
             <div class="w-90 shadow-sm p-4 rounded mx-auto mt-5">
-                ISIEN
+                @yield('konten')
             </div>
         </div>
     </div>
-    <div class="sidebar bg-primary vh-100 fixed-top">
-        <a href="#" class="text-white">HALO</a>
+    <div class="sidebar px-3 vh-100">
+        <div class="w-100 d-flex flex-column" style="margin-top:150px;">
+            <a href="#" class="menu arialrounded-mt-bold my-2 d-block">
+                DASHBOARD
+            </a>
+            <a href="#" class="menu arialrounded-mt-bold my-2 d-block">
+                TABEL
+            </a>
+            <a href="#" class="sub-menu ms-3 my-2 d-block">
+                tabel 1
+            </a>
+            <a href="#" class="sub-menu ms-3 my-2 d-block">
+                tabel 2
+            </a>
+            <a href="#" class="sub-menu ms-3 my-2 d-block">
+                tabel 3
+            </a>
+        </div>
+    </div>
+    <div class="footer py-2">
+        Copyright SMA Muhammadiyah 1 Surabaya,2020.
     </div>
 </body>
     <script>
         $( document ).ready(function() {
             $('.navbar-toggler').click(function(){
-                $(".sidebar").toggleClass("sidebar-x");
-                $(".spacer-sidebar").toggleClass("w-0");
-                //$('.sidebar').css('left','-250px');
-                //$('.spacer-sidebar').css('width','0px');
+                    $(".sidebar").toggleClass("sidebar-x");
+                    $(".spacer-sidebar").toggleClass("w-250px");
             });
         });
     </script>

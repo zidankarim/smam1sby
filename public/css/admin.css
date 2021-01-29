@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'ArialRounded-Mt-Bold';
+    src: url('../font/ArialRoundedMT-Bold.woff');
+  }
+.arialrounded-mt-bold{
+    font-family: 'ArialRounded-Mt-Bold';
+}
 .overflow-x-hidden {
     overflow-x: hidden;
 }
@@ -6,15 +13,69 @@
     transition-duration: 0.5s;
 }
 .sidebar {
+    background: rgb(41,51,57);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
     width: 250px;
     transition-duration: 0.5s;
 }
 .sidebar-x {
-    left: -250px !important;
+    left: 0px !important;
 }
-.w-0 {
-    width: 0px !important;
+.w-250px {
+    width: 250px !important;
 }
 .w-90 {
     width: 90%;
+}
+.menu-container {
+
+}
+.menu {
+    width: 100%;
+    background: rgb(0,0,240);
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+.sub-menu{
+    background: rgb(0,175,239);
+    padding: 3px 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.menu:hover{
+    color: white !important;
+}
+.sub-menu:hover{
+    color: white !important;
+}
+.footer {
+    right: 0px;
+    width: calc(100% - 250px);
+    position: fixed;
+    bottom: 0px;
+    background: rgb(233,233,235);
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+@media(max-width:992px){
+    .footer{
+        left: 0;
+        width: 100%;
+    }
+    .spacer-sidebar {
+        width: 0px;
+    }
+    .sidebar {
+        left: -250px;
+    }
 }
